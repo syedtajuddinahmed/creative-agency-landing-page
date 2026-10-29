@@ -1,4 +1,15 @@
-/*================== All Common CSS Start ================*/
+/*=======================================================
+                    All Common CSS Start
+========================================================*/
+:root {
+  --primary-color: #5956e8;
+  --heading-color: #fffefe;
+  --black70-color: rgba(24, 24, 24, 0.7);
+  --black-color: #181818;
+  --footer-color: #5d5d5d;
+  --white-color: #ffffff;
+  --white2-color: #e3e3e3;
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,21 +27,45 @@ li {
 }
 
 body {
-  background: #e5e5e5;
+  background: var(--white-color);
   font-family: "Inter", sans-serif;
 }
 
 button {
   border: none;
 }
-/*=================== All Common CSS End ================*/
 
-/*==================== NavBar Start ====================*/
 .container {
   max-width: 1170px;
   margin-inline: auto;
 }
 
+.section_header {
+  max-width: 542px;
+  margin-inline: auto;
+  text-align: center;
+}
+.section_header h2 {
+  margin-top: 46px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--black-color);
+}
+.section_header p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  color: var(--black70-color);
+}
+/*=======================================================
+                      All Common CSS End
+========================================================*/
+
+/*=======================================================
+                        NavBar Start
+========================================================*/
 nav {
   padding: 34px 0;
 }
@@ -42,8 +77,7 @@ nav {
   gap: 30px;
   /* border-bottom: 1px solid black; */
 }
-.main_menu .menu {
-}
+
 .main_menu .menu ul {
   display: flex;
   justify-content: space-between;
@@ -58,18 +92,18 @@ nav {
   font-size: 18px;
   line-height: normal;
   font-weight: 500;
-  color: #181818;
+  color: var(--black-color);
   transition: all linear 0.3s;
 }
 
 .main_menu .menu ul li.active a {
-  color: #5956e8;
+  color: var(--primary-color);
 }
 .main_menu .menu ul li.active::after {
   content: "";
   height: 5px;
   width: 5px;
-  background-color: #5956e8;
+  background-color: var(--primary-color);
   border-radius: 50%;
   position: absolute;
   bottom: -10px;
@@ -78,17 +112,116 @@ nav {
   transform: translateX(-50%);
 }
 .main_menu .menu ul li a:hover {
-  color: #5956e8;
+  color: var(--primary-color);
 }
 
-.main_menu .buttons button {
+.main_menu .buttons a {
   font-size: 18px;
   line-height: normal;
   font-weight: 500;
-  color: #ffffff;
-  background-color: #5956e8;
+  color: var(--white-color);
+  background-color: var(--primary-color);
   border-radius: 10px;
   padding: 13px 23.5px;
   cursor: pointer;
 }
-/*==================== NavBar End ====================*/
+/*=======================================================
+                        NavBar End
+========================================================*/
+
+/*=======================================================
+                  Bannar Section Start
+========================================================*/
+#banner {
+  background-color: var(--primary-color);
+}
+
+#banner .container .banner_content {
+  padding: 182px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 77px;
+}
+
+#banner .container .banner_content .info h1 {
+  color: var(--heading-color);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 80px;
+}
+#banner .container .banner_content .info p {
+  color: var(--heading-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 1.3px;
+  margin-top: 106px;
+  margin-bottom: 30px;
+}
+#banner .container .banner_content .info a {
+  color: var(--primary-color);
+  background-color: var(--heading-color);
+  padding: 13px 22px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+/*=======================================================
+                    Bannar Section End
+========================================================*/
+
+/*=======================================================
+                Our Services Section Start
+========================================================*/
+.service_grid {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.service_grid .service_item {
+  width: calc(33.33% - 20px);
+  background-color: var(--white-color);
+  border: 0.5px solid var(--white2-color);
+  padding: 63px 48px;
+  border-radius: 10px;
+  transition: all linear 0.3s;
+}
+
+.service_grid .service_item:hover {
+  box-shadow: 0 6px 35px 0 rgba(0, 0, 0, 0.25);
+}
+
+.service_grid .service_item .icon a img {
+  padding: 17px;
+  border: 0.5px solid var(--primary-color);
+  border-radius: 10px;
+}
+.service_grid .service_item .web_icon a img {
+  padding: 17px;
+  border: 0.5px solid var(--primary-color);
+  border-radius: 10px;
+  background-color: var(--primary-color);
+}
+
+.service_grid .service_item .text {
+}
+.service_grid .service_item .text h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--black-color);
+}
+.service_grid .service_item .text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  color: var(--black70-color);
+  max-width: 274px;
+}
+/*=======================================================
+                  Our Services Section End
+========================================================*/
