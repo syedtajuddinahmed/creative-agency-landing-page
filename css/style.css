@@ -1,0 +1,94 @@
+/*================== All Common CSS Start ================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+body {
+  background: #e5e5e5;
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  border: none;
+}
+/*=================== All Common CSS End ================*/
+
+/*==================== NavBar Start ====================*/
+.container {
+  max-width: 1170px;
+  margin-inline: auto;
+}
+
+nav {
+  padding: 34px 0;
+}
+
+.main_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  /* border-bottom: 1px solid black; */
+}
+.main_menu .menu {
+}
+.main_menu .menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 57px;
+}
+.main_menu .menu ul li {
+  position: relative;
+}
+
+.main_menu .menu ul li a {
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 500;
+  color: #181818;
+  transition: all linear 0.3s;
+}
+
+.main_menu .menu ul li.active a {
+  color: #5956e8;
+}
+.main_menu .menu ul li.active::after {
+  content: "";
+  height: 5px;
+  width: 5px;
+  background-color: #5956e8;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-top: 5px;
+  transform: translateX(-50%);
+}
+.main_menu .menu ul li a:hover {
+  color: #5956e8;
+}
+
+.main_menu .buttons button {
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #5956e8;
+  border-radius: 10px;
+  padding: 13px 23.5px;
+  cursor: pointer;
+}
+/*==================== NavBar End ====================*/
