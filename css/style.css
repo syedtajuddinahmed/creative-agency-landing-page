@@ -193,17 +193,17 @@ nav {
   box-shadow: 0 6px 35px 0 rgba(0, 0, 0, 0.25);
 }
 
-.service_grid .service_item .icon a img {
+/* .service_grid .service_item .icon a {
   padding: 17px;
   border: 0.5px solid var(--primary-color);
   border-radius: 10px;
 }
-.service_grid .service_item .web_icon a img {
+.service_grid .service_item .web_icon a svg path {
   padding: 17px;
   border: 0.5px solid var(--primary-color);
   border-radius: 10px;
   background-color: var(--primary-color);
-}
+} */
 
 .service_grid .service_item .text {
 }
@@ -224,4 +224,31 @@ nav {
 }
 /*=======================================================
                   Our Services Section End
+========================================================*/
+
+/*=======================================================
+              Our Work Portfolio Section Start
+========================================================*/
+.portfolio_items {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.portfolio_items ul {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  gap: 52px;
+  align-items: center;
+  padding: 23px 28px;
+}
+.portfolio_items ul li {
+}
+.portfolio_items ul li a {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--black-color);
+}
+/*=======================================================
+              Our Work Portfolio Section End
 ========================================================*/
